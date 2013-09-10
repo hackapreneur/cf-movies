@@ -4,6 +4,8 @@ class PagesController < ApplicationController
   	@first_movie =  Movie.first
   	@first_count = @first_movie.votes.count 
 
-  end
+
+  	@my_favorite =  Movie.find_by title: 'The Matrix'
+  	end
 
 end
